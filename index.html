@@ -1,6 +1,11 @@
 <html>
 <head>
 <title>1v1 Win Con</title>
+  <script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
 </head>
 <body>
   <center><h1>1v1 Win Con</h1></center>
@@ -17,7 +22,26 @@
   <div id="myImage">aaa</div>
 
 <button onclick='document.getElementById("myImage").innerHTML = "lost"'>zzzzz</button>
+<p id="demo">JavaScript can hide HTML elements.</p>
 
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+document.getElementById("demo").innerHTML = 5 + 6;
+  
+  <script>
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
  
   </body>
 </html>
